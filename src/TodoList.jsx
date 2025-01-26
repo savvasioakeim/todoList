@@ -8,7 +8,7 @@ export default function TodoList() {
     const [tasks, setTasks] = useState([
         { text: "na vrw douleia epitelous", completed: false },
         { text: "na vgalw lefta", completed: false },
-        { text: "o krik einai gay", completed: true }
+        { text: "kapoios na to dei", completed: true }
     ]);
     const [newTasks, setNewTasks] = useState("");
 
