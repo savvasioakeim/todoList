@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+
+}
+
+.container ul {
+    padding: 0;
+}
+
+.listItem {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ddd;
+
+}
+
+
+
+
+
+.list {
+    width: 100%;
+    /* Make it occupy the full width on small screens */
+    max-width: 50em;
+    /* Set a max width for larger screens */
+    background-color: rgb(206, 206, 206);
+
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.svg {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+    border: 0.2px solid black;
+    border-radius: 10%;
+    margin: 0 2px;
+}
+
+.svg:hover {
+    color: white;
+    background-color: black;
+}
+
+.icons {
+    display: flex;
+    margin-right: 20px;
+    gap: 5px;
+    cursor: pointer;
+
+}
+
+input {
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+    border: 1px solid black;
+    text-indent: 5px;
+    font-size: 0.9em;
+}
+
+.task {
+    text-transform: uppercase;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 50%;
+    flex: 1;
+    /* Allow text to grow */
+    margin-right: 10px;
+    /* Add spacing between text and icons */
+}
+
+input[type="checkbox"] {
+
+    cursor: pointer;
+    appearance: none;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    background-color: rebeccapurple;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+input[type="checkbox"]:checked+.task {
+    font-style: italic;
+}
+
+input[type="checkbox"]:checked {
+    background-color: rebeccapurple;
+    /* Background color */
+    position: relative;
+}
+
+input[type="checkbox"]:checked::after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid rgb(40, 255, 112);
+    /* Checkmark color here */
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+
+
+
+
+button {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: rgb(95, 236, 130);
+}
+
+button:hover {
+    background-color: rgb(62, 161, 87);
+}
+
+input:focus {
+    outline: none;
+}
+
+.trash {
+    background-color: rgb(240, 33, 33);
+}
+
+.trash:hover {
+    background-color: rgb(204, 8, 8);
+    color: black;
+}
